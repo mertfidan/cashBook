@@ -1,21 +1,21 @@
-package com.example.application.data;
+package com.example.application.data.entity;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 
 @MappedSuperclass
 public abstract class AbstractEntity {
 
     @Id
-    @GeneratedValue
-    private Integer id;
+    @Column(name = "ID")
+    @GeneratedValue(strategy=GenerationType.IDENTITY, generator = "id_Sequence")
+    @SequenceGenerator(name = "id_Sequence", sequenceName = "ID_SEQ")
+    private Long id;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

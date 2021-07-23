@@ -1,0 +1,19 @@
+SELECT *
+FROM COMPANY
+INNER JOIN COMPANY_ACTIVITY
+ON COMPANY.SYSTEM_USER_ID  = 1 AND COMPANY_ACTIVITY.COMPANY_ID = COMPANY.ID;
+
+
+spring.datasource.driver-class-name = org.sqlite.JDBC
+spring.datasource.url=jdbc:sqlite:kalamoza.db
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=com.example.application.SQLDialect
+spring.datasource.username = sa
+spring.datasource.password = sa
+
+spring.datasource.driver-class-name = org.sqlite.JDBC
+spring.datasource.url=jdbc:sqlite:kalamoza.db
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.database-platform=com.example.application.SQLDialect
+spring.datasource.username = admin
+spring.datasource.password = admin

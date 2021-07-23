@@ -1,0 +1,11 @@
+.company-report-view {
+    display: block;
+    padding: 2em;
+}
+
+.lbl{
+    color: springgreen;
+    text-align: center;
+    font-size: large;
+    font-style: oblique;
+}

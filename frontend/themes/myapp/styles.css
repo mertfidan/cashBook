@@ -1,6 +1,7 @@
 @import url('./main-layout.css');
 @import url('./views/hello-world-view.css');
 @import url('./views/about-view.css');
+@import url('./views/company-report-view.css');
 @import url('lumo-css-framework/all-classes.css');    html {
       --lumo-primary-color: hsla(214, 0%, 0%, 1);
       --lumo-base-color: #ffffff;
